@@ -4,77 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+
     <!-- CSS -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
     <!-- font-awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
 </head>
 <body>
     <div class="container">
         <form action="">
-            <h2>Registration</h2>
+            <h2>Registration Form</h2>
+
+            <!-- Personal Details -->
             <h3>Personal Details</h3>
             <div class="Fields">
                 <div class="form-group">
-                    <label for="full-name">Full Name</label><br>
-                    <input type="text" name="fullName" id="full-name" placeholder="Enter your name">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter your full name">
                 </div>
+
                 <div class="form-group">
-                    <label for="dob">Date of Birth</label><br>
-                    <input class="dob" type="date" name="fullName" id="dob" placeholder="Enter birth date">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob">
                 </div>
+
                 <div class="form-group">
-                    <label for="email">Email</label><br>
+                    <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Enter your email">
                 </div>
             </div>
 
             <div class="Fields">
                 <div class="form-group">
-                    <label for="full-name">Full Name</label><br>
-                    <input type="text" name="fullName" id="full-name" placeholder="Enter your name">
+                    <label for="fatherName">Father Name</label>
+                    <input type="text" name="fatherName" id="fatherName" placeholder="Enter father name">
                 </div>
+
                 <div class="form-group">
-                    <label for="gender">Gender</label><br>
-                    <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="">Select gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
                 </div>
+
                 <div class="form-group">
-                    <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter phone number">
                 </div>
             </div>
-            
+
+            <!-- Identity Details -->
             <h3>Identity Details</h3>
             <div class="Fields">
                 <div class="form-group">
-                    <label for="full-name">Full Name</label><br>
-                    <input type="text" name="fullName" id="full-name" placeholder="Enter your name">
+                    <label for="cnic">CNIC / ID Number</label>
+                    <input type="text" name="cnic" id="cnic" placeholder="Enter your CNIC">
                 </div>
+
                 <div class="form-group">
-                    <label for="dob">Date of Birth</label><br>
-                    <input type="text" name="fullName" id="dob" placeholder="Enter birth date">
+                    <label for="issueDate">Issue Date</label>
+                    <input type="date" name="issueDate" id="issueDate">
                 </div>
+
                 <div class="form-group">
-                    <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="date" name="expiryDate" id="expiryDate">
                 </div>
             </div>
 
-            <div class="Fields">
-                <div class="form-group">
-                    <label for="full-name">Full Name</label><br>
-                    <input type="text" name="fullName" id="full-name" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="dob">Date of Birth</label><br>
-                    <input type="text" name="fullName" id="dob" placeholder="Enter birth date">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label><br>
-                    <input type="email" name="email" id="email" placeholder="Enter your email">
-                </div>
-            </div>
-            <p><input type="checkbox">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti recusandae nulla pariatur saepe voluptatum facere, tenetur fugiat eos possimus voluptatibus inventore obcaecati illo cum ipsam magnam! Quos inventore voluptate unde.</p>
+            <p class="agreement">
+                <input type="checkbox" required> I agree to the terms and conditions.
+            </p>
         </form>
     </div>
 </body>
